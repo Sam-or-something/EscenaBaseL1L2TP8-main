@@ -23,7 +23,7 @@ public class Timer : MonoBehaviour
         {
             timer += Time.deltaTime;
             timer_UI.text = Mathf.FloorToInt(timer) + "s";
-            if(timer > 60)
+            if(timer > 30)
             {
                 jugador.GetComponent<BuscarElCable>().jugando = false;
             }
